@@ -1,0 +1,12 @@
+2016-07-08 09:20:28 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/08 9:20:28
+【Type】：SocketException
+【Message】：接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+

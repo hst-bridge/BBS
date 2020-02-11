@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Table>
+  <DBServer>
+    <ServerName />
+    <LoginName />
+    <Password />
+    <DatabaseName />
+  </DBServer>
+  <DBServer>
+    <ServerName>192.168.253.131</ServerName>
+    <LoginName>sa</LoginName>
+    <Password>akindo</Password>
+    <DatabaseName>budbackup2test</DatabaseName>
+  </DBServer>
+</Table>

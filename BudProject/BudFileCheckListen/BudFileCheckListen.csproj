@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D925141F-EE70-4392-87BA-25ECCFC63EB6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BudFileCheckListen</RootNamespace>
+    <AssemblyName>BudFileCheckListen</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>check.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlphaFS">
+      <HintPath>..\Dll\AlphaFS.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Dll\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\FileListenHelper.cs" />
+    <Compile Include="BLL\FileListenResolver.cs" />
+    <Compile Include="BLL\LogTableManager.cs" />
+    <Compile Include="BLL\MFLTableManager.cs" />
+    <Compile Include="BLL\QueueProxy.cs" />
+    <Compile Include="BLL\Signal.cs" />
+    <Compile Include="BLL\SyncManager.cs" />
+    <Compile Include="BudBackup2Context.cs" />
+    <Compile Include="BudFileCheckListen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BudFileCheckListen.Designer.cs">
+      <DependentUpon>BudFileCheckListen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AppConfig.cs" />
+    <Compile Include="Common\Constant\DefaultValue.cs" />
+    <Compile Include="BLL\ReactiveQueue.cs" />
+    <Compile Include="Common\CreateBAT.cs" />
+    <Compile Include="Common\DiskUtil.cs" />
+    <Compile Include="Common\FileSystem\FSUtil.cs" />
+    <Compile Include="Common\Helper\TimeCheckHelper.cs" />
+    <Compile Include="Common\LogManager.cs" />
+    <Compile Include="Common\NetWorkFileShare.cs" />
+    <Compile Include="Common\RandomCode.cs" />
+    <Compile Include="Common\SendMail.cs" />
+    <Compile Include="Common\SqlHelper.cs" />
+    <Compile Include="Common\TxtReadClass.cs" />
+    <Compile Include="Common\Util\ConfigUtil.cs" />
+    <Compile Include="Common\Util\MessageUtil.cs" />
+    <Compile Include="DBService\BackupServerGroupDetailService.cs" />
+    <Compile Include="DBService\BackupServerGroupService.cs" />
+    <Compile Include="DBService\FileListenService.cs" />
+    <Compile Include="DBService\LogService.cs" />
+    <Compile Include="DBService\MonitorFileListenService.cs" />
+    <Compile Include="DBService\MonitorServerFileService.cs" />
+    <Compile Include="DBService\MonitorServerService.cs" />
+    <Compile Include="Entities\backupServer.cs" />
+    <Compile Include="Entities\backupServerFile.cs" />
+    <Compile Include="Entities\backupServerGroup.cs" />
+    <Compile Include="Entities\backupServerGroupDetail.cs" />
+    <Compile Include="Entities\fileTypeSet.cs" />
+    <Compile Include="Entities\log.cs" />
+    <Compile Include="Entities\manualBackupServer.cs" />
+    <Compile Include="Entities\monitorBackupServer.cs" />
+    <Compile Include="Entities\monitorFileListen.cs" />
+    <Compile Include="Entities\monitorServer.cs" />
+    <Compile Include="Entities\monitorServerFile.cs" />
+    <Compile Include="Entities\monitorServerFolder.cs" />
+    <Compile Include="Entities\userInfo.cs" />
+    <Compile Include="BLL\FileListener.cs" />
+    <Compile Include="Mapping\backupServerFileMap.cs" />
+    <Compile Include="Mapping\backupServerGroupDetailMap.cs" />
+    <Compile Include="Mapping\backupServerGroupMap.cs" />
+    <Compile Include="Mapping\backupServerMap.cs" />
+    <Compile Include="Mapping\fileTypeSetMap.cs" />
+    <Compile Include="Mapping\logMap.cs" />
+    <Compile Include="Mapping\manualBackupServerMap.cs" />
+    <Compile Include="Mapping\monitorBackupServerMap.cs" />
+    <Compile Include="Mapping\monitorFileListenMap.cs" />
+    <Compile Include="Mapping\monitorServerFileMap.cs" />
+    <Compile Include="Mapping\monitorServerFolderMap.cs" />
+    <Compile Include="Mapping\monitorServerMap.cs" />
+    <Compile Include="Mapping\userInfoMap.cs" />
+    <Compile Include="Models\CompareMonitorInfo.cs" />
+    <Compile Include="Models\FileArgs.cs" />
+    <Compile Include="Models\FileInfoStruct.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BudFileCheckListen.resx">
+      <DependentUpon>BudFileCheckListen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DBInterface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{5BC13829-19A0-417D-805C-7D101375A3A8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

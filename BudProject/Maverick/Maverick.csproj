@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB273CBD-68CE-4539-89FC-FDFD1CD79796}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maverick</RootNamespace>
+    <AssemblyName>Maverick</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Crypto.Ciphers\AESFastEngine.cs" />
+    <Compile Include="Crypto.Ciphers\BlowfishEngine.cs" />
+    <Compile Include="Crypto.Ciphers\CAST5Engine.cs" />
+    <Compile Include="Crypto.Ciphers\CBCBlockCipher.cs" />
+    <Compile Include="Crypto.Ciphers\Cipher.cs" />
+    <Compile Include="Crypto.Ciphers\CipherEngine.cs" />
+    <Compile Include="Crypto.Ciphers\DESedeEngine.cs" />
+    <Compile Include="Crypto.Ciphers\DESEngine.cs" />
+    <Compile Include="Crypto.Ciphers\SerpentEngine.cs" />
+    <Compile Include="Crypto.Ciphers\TwofishEngine.cs" />
+    <Compile Include="Crypto.Digests\GeneralDigest.cs" />
+    <Compile Include="Crypto.Digests\Hash.cs" />
+    <Compile Include="Crypto.Digests\SHA1Digest.cs" />
+    <Compile Include="Crypto.IO\ByteBuffer.cs" />
+    <Compile Include="Crypto.IO\SimpleASNReader.cs" />
+    <Compile Include="Crypto.IO\SimpleASNWriter.cs" />
+    <Compile Include="Crypto.Util\SupportClass.cs" />
+    <Compile Include="DSA\DSA.cs" />
+    <Compile Include="DSA\DSAKey.cs" />
+    <Compile Include="DSA\DSAPrivateKey.cs" />
+    <Compile Include="DSA\DSAPublicKey.cs" />
+    <Compile Include="Events\Events.cs" />
+    <Compile Include="HTTP\HTTPHeader.cs" />
+    <Compile Include="HTTP\HTTPRequest.cs" />
+    <Compile Include="HTTP\HTTPResponse.cs" />
+    <Compile Include="Math\BigInteger.cs" />
+    <Compile Include="Math\SecureRandom.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReactiveQueue.cs" />
+    <Compile Include="RSA\RSA.cs" />
+    <Compile Include="RSA\RSAKey.cs" />
+    <Compile Include="RSA\RSAPrivateCrtKey.cs" />
+    <Compile Include="RSA\RSAPrivateKey.cs" />
+    <Compile Include="RSA\RSAPublicKey.cs" />
+    <Compile Include="SCP\SCPClient.cs" />
+    <Compile Include="SFTPFileArgs.cs" />
+    <Compile Include="SFTP\DirectoryOperation.cs" />
+    <Compile Include="SFTP\SFTPClient.cs" />
+    <Compile Include="SFTP\SFTPFile.cs" />
+    <Compile Include="SFTP\SFTPFileAttributes.cs" />
+    <Compile Include="SFTP\SFTPStatusException.cs" />
+    <Compile Include="SFTP\SFTPSubsystemChannel.cs" />
+    <Compile Include="SFTP\TransferCancelledException.cs" />
+    <Compile Include="SSH.Packets\PacketHolder.cs" />
+    <Compile Include="SSH.Packets\PacketObserver.cs" />
+    <Compile Include="SSH.Packets\SSHAbstractChannel.cs" />
+    <Compile Include="SSH.Packets\SSHAbstractStream.cs" />
+    <Compile Include="SSH.Packets\SSHChannelMessage.cs" />
+    <Compile Include="SSH.Packets\SSHPacket.cs" />
+    <Compile Include="SSH.Packets\SSHPacketReader.cs" />
+    <Compile Include="SSH.Packets\SSHPacketRouter.cs" />
+    <Compile Include="SSH.Packets\SSHPacketStore.cs" />
+    <Compile Include="SSH.Packets\ThreadSynchronizer.cs" />
+    <Compile Include="SSH2.Algorithms\DiffieHellmanGroup1SHA1.cs" />
+    <Compile Include="SSH2.Algorithms\SSH2DSAPublicKey.cs" />
+    <Compile Include="SSH2.Algorithms\SSH2RSAPublicKey.cs" />
+    <Compile Include="SSH2.Algorithms\SupportedCiphers.cs" />
+    <Compile Include="SSH2.Algorithms\SupportedMacs.cs" />
+    <Compile Include="SSH2\AuthenticationProtocol.cs" />
+    <Compile Include="SSH2\BannerDisplay.cs" />
+    <Compile Include="SSH2\ChannelFactory.cs" />
+    <Compile Include="SSH2\ConnectionProtocol.cs" />
+    <Compile Include="SSH2\GlobalRequest.cs" />
+    <Compile Include="SSH2\GlobalRequestHandler.cs" />
+    <Compile Include="SSH2\KBIAuthentication.cs" />
+    <Compile Include="SSH2\SSH2AuthenticationClient.cs" />
+    <Compile Include="SSH2\SSH2AuthenticationResult.cs" />
+    <Compile Include="SSH2\SSH2Channel.cs" />
+    <Compile Include="SSH2\SSH2Client.cs" />
+    <Compile Include="SSH2\SSH2Context.cs" />
+    <Compile Include="SSH2\SSH2ForwardingChannel.cs" />
+    <Compile Include="SSH2\SSH2Hmac.cs" />
+    <Compile Include="SSH2\SSH2KeyExchange.cs" />
+    <Compile Include="SSH2\SSH2Packet.cs" />
+    <Compile Include="SSH2\SSH2PasswordAuthentication.cs" />
+    <Compile Include="SSH2\SSH2PublicKeyAuthentication.cs" />
+    <Compile Include="SSH2\SSH2Session.cs" />
+    <Compile Include="SSH2\TransportProtocol.cs" />
+    <Compile Include="SSH\AbstractComponentFactory.cs" />
+    <Compile Include="SSH\AuthenticationResult.cs" />
+    <Compile Include="SSH\ChannelOpenException.cs" />
+    <Compile Include="SSH\ForwardingRequestListener.cs" />
+    <Compile Include="SSH\HostKeyVerification.cs" />
+    <Compile Include="SSH\PasswordAuthentication.cs" />
+    <Compile Include="SSH\PseudoTerminalModes.cs" />
+    <Compile Include="SSH\PublicKeyAuthentication.cs" />
+    <Compile Include="SSH\SSHAuthentication.cs" />
+    <Compile Include="SSH\SSHChannel.cs" />
+    <Compile Include="SSH\SSHClient.cs" />
+    <Compile Include="SSH\SSHConnector.cs" />
+    <Compile Include="SSH\SSHContext.cs" />
+    <Compile Include="SSH\SSHDSAPrivateKey.cs" />
+    <Compile Include="SSH\SSHException.cs" />
+    <Compile Include="SSH\SSHIO.cs" />
+    <Compile Include="SSH\SSHKeyFingerprint.cs" />
+    <Compile Include="SSH\SSHKeyPair.cs" />
+    <Compile Include="SSH\SSHPrivateKey.cs" />
+    <Compile Include="SSH\SSHPublicKey.cs" />
+    <Compile Include="SSH\SSHRSAPrivateCrtKey.cs" />
+    <Compile Include="SSH\SSHRSAPrivateKey.cs" />
+    <Compile Include="SSH\SSHSession.cs" />
+    <Compile Include="SSH\SSHTransport.cs" />
+    <Compile Include="SSH\SSHTunnel.cs" />
+    <Compile Include="SSH\SubsystemChannel.cs" />
+    <Compile Include="SSH\TcpClientTransport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\Maverick.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Maverick.dll" />
+    <Content Include="obj\Debug\Maverick.pdb" />
+    <Content Include="obj\Release\Maverick.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Maverick.dll" />
+    <Content Include="obj\Release\Maverick.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{5BC13829-19A0-417D-805C-7D101375A3A8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

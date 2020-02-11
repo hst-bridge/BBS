@@ -1,0 +1,132 @@
+2016-07-07 11:22:50 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:22:50
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:36:16 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:36:16
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:36:27 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:36:27
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:44:47 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:44:47
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:45:16 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:45:16
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:45:19 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:45:19
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:45:24 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:45:24
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:47:05 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:47:05
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:47:06 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:47:06
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:47:08 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:47:08
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+
+2016-07-07 11:48:28 192.168.254.226
+****************************Message****************************
+【DateTime】：2016/07/07 11:48:28
+【Type】：SocketException
+【Message】：対象のコンピューターによって拒否されたため、接続できませんでした。 192.168.244.130:22
+【StackTrace】：   場所 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   場所 Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+   場所 Renci.SshNet.Session.Connect()
+   場所 Renci.SshNet.BaseClient.Connect()
+   場所 BudSSH.BLL.SFTPProxy.GetAvailableSFTP() 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudSSH\BLL\SFTPProxy.cs:行 67
+***************************************************************
+

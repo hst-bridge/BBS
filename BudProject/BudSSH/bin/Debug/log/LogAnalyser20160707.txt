@@ -1,0 +1,24 @@
+2016-07-07 10:32:42 start
+2016-07-07 10:33:04 copyLogList is null
+2016-07-07 10:37:02 start
+2016-07-07 10:37:05 copyLogList is null
+2016-07-07 10:39:17 start
+2016-07-07 10:39:19 copyLogList is null
+2016-07-07 10:42:50 start
+2016-07-07 10:42:53 copyLogList is null
+2016-07-07 10:44:25 start
+2016-07-07 10:44:25 copyLogList is null
+2016-07-07 10:48:40 start
+2016-07-07 10:48:40 copyLogList is null
+2016-07-07 10:54:37 start
+2016-07-07 10:54:37 copyLogList is null
+2016-07-07 10:56:04 start
+2016-07-07 10:56:06 copyLogList is null
+2016-07-07 10:58:51 start
+2016-07-07 10:58:52 copyLogList is null
+2016-07-07 11:14:15 start
+2016-07-07 11:14:15 copyLogList is null
+2016-07-07 11:18:30 start
+2016-07-07 11:18:30 copyLogList is null
+2016-07-07 11:20:40 start
+2016-07-07 11:20:41 copyLogList is null

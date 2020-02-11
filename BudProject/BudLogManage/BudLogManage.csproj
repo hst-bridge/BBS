@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B50B4A4D-BCE8-4F27-8FD6-A7F76E2031C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BudLogManage</RootNamespace>
+    <AssemblyName>BudLogManage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Cache\Cache.cs" />
+    <Compile Include="BLL\Cache\Session.cs" />
+    <Compile Include="BLL\ConfigManager.cs" />
+    <Compile Include="BLL\ExportManager.cs" />
+    <Compile Include="BLL\FilesManager.cs" />
+    <Compile Include="BLL\StatusManager.cs" />
+    <Compile Include="BLL\TaskScheduler.cs" />
+    <Compile Include="Common\Config\ConfigLoader.cs" />
+    <Compile Include="Common\Config\ConfigSaver.cs" />
+    <Compile Include="Common\Culture\CultureManager.cs" />
+    <Compile Include="Common\Export\IExport\IExporter.cs" />
+    <Compile Include="Common\Helper\KeyUtil.cs" />
+    <Compile Include="Common\Helper\LogType.cs" />
+    <Compile Include="Common\Helper\OperationType.cs" />
+    <Compile Include="Common\Util\DateTimeUtil.cs" />
+    <Compile Include="Common\Util\FolderDialog.cs" />
+    <Compile Include="Common\Util\FormStyle\FormStyleUtil.cs" />
+    <Compile Include="Common\Util\MessageUtil.cs" />
+    <Compile Include="Common\Export\CSVExporter.cs" />
+    <Compile Include="Common\Util\OperationTypeUtil.cs" />
+    <Compile Include="Common\Util\XMLUtil.cs" />
+    <Compile Include="BLL\IBLL\ILogAnalyser.cs" />
+    <Compile Include="BLL\FastLogAnalyser.cs" />
+    <Compile Include="BLL\DetailLogAnalyser.cs" />
+    <Compile Include="Controller\ActionController.cs" />
+    <Compile Include="Controller\ConfigController.cs" />
+    <Compile Include="Controller\TotalController.cs" />
+    <Compile Include="DAL\IDAL\ILogReader.cs" />
+    <Compile Include="DAL\RoboCopyLogReader.cs" />
+    <Compile Include="DAL\SSHLogReader.cs" />
+    <Compile Include="DAL\FastRoboCopyLogReader.cs" />
+    <Compile Include="Exception\GlobalExceptionManager.cs" />
+    <Compile Include="Factory\Reader\DetailReaderFactory.cs" />
+    <Compile Include="Factory\Analyser\FastAnalyseFactory.cs" />
+    <Compile Include="Factory\AnalyseFactoryFactory.cs" />
+    <Compile Include="Factory\Reader\FastReaderFactory.cs" />
+    <Compile Include="Factory\Analyser\IAnalyseFactory.cs" />
+    <Compile Include="Factory\Analyser\DetailAnalyseFactory.cs" />
+    <Compile Include="Factory\Reader\IReaderFactory.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Config.cs" />
+    <Compile Include="Model\LogEntry.cs" />
+    <Compile Include="Common\Helper\Size.cs" />
+    <Compile Include="Common\Helper\Unit.cs" />
+    <Compile Include="Model\Operation.cs" />
+    <Compile Include="Model\Provider.cs" />
+    <Compile Include="Model\Status.cs" />
+    <Compile Include="Model\TimeInterval.cs" />
+    <Compile Include="Model\Total.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Action.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Action.Designer.cs">
+      <DependentUpon>Action.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Configure.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Configure.Designer.cs">
+      <DependentUpon>Configure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormValidator\Common\IValidator.cs" />
+    <Compile Include="View\FormValidator\Common\Rules\IRule.cs" />
+    <Compile Include="View\FormValidator\Common\Rules\Required.cs" />
+    <Compile Include="View\FormValidator\Common\TextBoxSetting.cs" />
+    <Compile Include="View\FormValidator\ConfigureValidator.cs" />
+    <Compile Include="View\OverView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\OverView.Designer.cs">
+      <DependentUpon>OverView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ViewManager.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Action.resx">
+      <DependentUpon>Action.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Configure.resx">
+      <DependentUpon>Configure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OverView.resx">
+      <DependentUpon>OverView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="BLL\Cache\ReadMe.txt" />
+    <Content Include="Common\Export\ReadMe.txt" />
+    <Content Include="logConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logstatus.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

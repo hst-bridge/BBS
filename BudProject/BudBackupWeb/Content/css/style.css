@@ -1,0 +1,15 @@
+﻿@charset "utf-8";
+
+/* list-c */
+.list-c div{clear:both;float:left;}
+.list-c .list{clear:both;border-left:1px #ccc solid;border-right:1px #ccc solid;border-bottom:1px #ccc solid;zoom:1;}
+.list-c .list:after{content: ""; display: block; clear: both; height: 0px;}
+.list-c .li-1{width:230px;border-right:1px #ccc solid;padding:10px 0px 10px 15px;font-size:14px;font-weight:bold;float:left;}
+.list-c .li-2{padding:10px 15px 10px 15px;margin-left:246px;text-align:center;}
+.list-c table{ width:100%;border-collapse:collapse;border:1px solid #ccc; }
+.list-c table td,.list-c table th {border:1px solid #ccc;padding:5px; font-weight:normal;overflow:hidden;/*word-break: break-all;*/text-align:left;border:1px solid #5f97d8;}
+.list-c table th{font-weight:bold;background-color:#9CF; border:1px solid #5f97d8;}
+
+.list-c table .tdt{background:#942529;color:#fff;font-size:14px;}
+.list-c table .tdn{height:0px;}
+.list-c table .tdn th,.list-c table .tdn td{height:0px;padding:5px;}

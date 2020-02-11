@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<transfergroupinfo>
+  <transfergroupobject>
+    <transfergroupid name="転送グループID">1</transfergroupid>
+    <transfergroupname name="転送グループ名">国内開発一部</transfergroupname>
+    <remarks name="備考"></remarks>
+    <currentstatus name="状態">1203247</currentstatus>
+    <createtime name="登録日時">2013-11-12 00:00:00</createtime>
+    <updatetime name="更新日時">2013-11-12 00:00:00</updatetime>
+    <deletetime name="削除日時"></deletetime>
+  
+</transfergroupobject>
+</transfergroupinfo>

@@ -1,0 +1,34 @@
+
+----------------------header---BEGIN-----------------------
+2016-09-09 14:36:29,622 [10] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+2016-09-09 14:36:51,141 [10] ERROR BudBackupSystem.FrmMain - オブジェクト参照がオブジェクト インスタンスに設定されていません。
+System.NullReferenceException: オブジェクト参照がオブジェクト インスタンスに設定されていません。
+   場所 BudBackupSystem.FrmMain.btnDetermine_Click(Object sender, EventArgs e) 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudBackupForm\FrmMain.cs:行 3083
+2016-09-09 14:37:22,767 [10] ERROR BudBackupSystem.FrmMain - オブジェクト参照がオブジェクト インスタンスに設定されていません。
+System.NullReferenceException: オブジェクト参照がオブジェクト インスタンスに設定されていません。
+   場所 BudBackupSystem.FrmMain.btnDetermine_Click(Object sender, EventArgs e) 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudBackupForm\FrmMain.cs:行 3083
+
+----------------------header---BEGIN-----------------------
+2016-09-09 14:38:02,749 [9] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+2016-09-09 14:38:14,275 [9] ERROR BudBackupSystem.FrmMain - オブジェクト参照がオブジェクト インスタンスに設定されていません。
+System.NullReferenceException: オブジェクト参照がオブジェクト インスタンスに設定されていません。
+   場所 BudBackupSystem.FrmMain.btnDetermine_Click(Object sender, EventArgs e) 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudBackupForm\FrmMain.cs:行 3084
+
+----------------------header---BEGIN-----------------------
+2016-09-09 14:39:25,706 [9] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-09 14:42:18,239 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-09 14:44:07,960 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------footer---END-----------------------
+
+----------------------header---BEGIN-----------------------
+2016-09-09 14:44:26,391 [10] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-09 14:45:29,479 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------footer---END-----------------------

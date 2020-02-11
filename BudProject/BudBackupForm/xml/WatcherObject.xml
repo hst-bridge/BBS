@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<watcherinfo>
+  <watcherobject>
+    <watcherid name="バックアップID">1</watcherid>
+    <watcherobjectname name="バックアップ元名">Jobサーバ１</watcherobjectname>
+    <ipaddress name="IP">192.168.0.1</ipaddress>
+    <remarks name="備考"></remarks>
+    <loginuser name="ログインユーザー">admin</loginuser>
+    <loginpassword name="ログインパスワード">12345</loginpassword>
+    <rootdirectory name="開始フォルダー">/home/test</rootdirectory>
+    <currentstatus name="状態">001</currentstatus>
+    <createtime name="登録日時">2013-11-12 00:00:00</createtime>
+    <updatetime name="更新日時">2013-11-12 00:00:00</updatetime>
+    <deletetime name="削除日時"></deletetime>
+  </watcherobject>
+</watcherinfo>

@@ -1,0 +1,64 @@
+
+----------------------header---BEGIN-----------------------
+
+----------------------footer---END-----------------------
+
+----------------------header---BEGIN-----------------------
+2016-09-08 16:02:01,143 [10] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 16:16:10,288 [9] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------footer---END-----------------------
+
+----------------------header---BEGIN-----------------------
+
+----------------------footer---END-----------------------
+
+----------------------header---BEGIN-----------------------
+2016-09-08 16:27:41,143 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------footer---END-----------------------
+
+----------------------header---BEGIN-----------------------
+2016-09-08 16:28:44,523 [9] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 17:50:46,428 [10] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 17:59:59,623 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:09:23,135 [9] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:11:46,564 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:24:13,732 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:25:34,801 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:26:34,535 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:27:58,639 [9] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:28:52,850 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+2016-09-08 18:29:10,693 [8] ERROR BudBackupSystem.FrmMain - 文字列で表される DateTime がカレンダー System.Globalization.GregorianCalendar でサポートされていません。
+System.FormatException: 文字列で表される DateTime がカレンダー System.Globalization.GregorianCalendar でサポートされていません。
+   場所 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   場所 BudBackupSystem.FrmMain.btnDetermine_Click(Object sender, EventArgs e) 場所 D:\Workspace\budbackupsystem\100.最新ソース\PackageReleaseTest\BudProject\BudBackupForm\FrmMain.cs:行 3051
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:33:46,084 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:45:33,223 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。
+
+----------------------header---BEGIN-----------------------
+2016-09-08 18:47:38,594 [8] INFO  BudBackupSystem.FrmLogin - adminログイン成功。

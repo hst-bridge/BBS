@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE233854-B04D-4DD0-860F-2EDE7F22CB4F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BudFileListen</RootNamespace>
+    <AssemblyName>BudFileListen</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BudFileListen.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Dll\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\DirectorClearManager.cs" />
+    <Compile Include="BLL\ProcessManager.cs" />
+    <Compile Include="BudBackup2Context.cs" />
+    <Compile Include="BudFileListen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BudFileListen.Designer.cs">
+      <DependentUpon>BudFileListen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CopyDirectory.cs" />
+    <Compile Include="Common\CreateBAT.cs" />
+    <Compile Include="Common\MessageUtil.cs" />
+    <Compile Include="Common\NetWorkFileShare.cs" />
+    <Compile Include="Common\FileSystem.cs" />
+    <Compile Include="Common\NetworkConnection.cs" />
+    <Compile Include="Common\RandomCode.cs" />
+    <Compile Include="Common\SendMail.cs" />
+    <Compile Include="Common\TimeCheckHelper.cs" />
+    <Compile Include="Common\TxtClass.cs" />
+    <Compile Include="DBInterface\IBackupServerGroupDetailService.cs" />
+    <Compile Include="DBInterface\IBackupServerGroupService.cs" />
+    <Compile Include="DBInterface\IBackupServerService.cs" />
+    <Compile Include="DBInterface\IFileTypeSetService.cs" />
+    <Compile Include="DBInterface\IMonitorFileListenService.cs" />
+    <Compile Include="DBInterface\IMonitorServerFileService.cs" />
+    <Compile Include="DBInterface\IMonitorServerFolderService.cs" />
+    <Compile Include="DBInterface\IMonitorServerService.cs" />
+    <Compile Include="DBService\BackupServerGroupDetailService.cs" />
+    <Compile Include="DBService\BackupServerGroupService.cs" />
+    <Compile Include="DBService\BackupServerService.cs" />
+    <Compile Include="DBService\FileTypeSetService.cs" />
+    <Compile Include="DBService\MonitorFileListenService.cs" />
+    <Compile Include="DBService\MonitorServerFileService.cs" />
+    <Compile Include="DBService\MonitorServerFolderService.cs" />
+    <Compile Include="DBService\MonitorServerService.cs" />
+    <Compile Include="DirectoryNameComparer.cs" />
+    <Compile Include="Entities\backupServer.cs" />
+    <Compile Include="Entities\backupServerFile.cs" />
+    <Compile Include="Entities\backupServerGroup.cs" />
+    <Compile Include="Entities\backupServerGroupDetail.cs" />
+    <Compile Include="Entities\fileTypeSet.cs" />
+    <Compile Include="Entities\log.cs" />
+    <Compile Include="Entities\manualBackupServer.cs" />
+    <Compile Include="Entities\monitorBackupServer.cs" />
+    <Compile Include="Entities\monitorFileListen.cs" />
+    <Compile Include="Entities\monitorServer.cs" />
+    <Compile Include="Entities\monitorServerFile.cs" />
+    <Compile Include="Entities\monitorServerFolder.cs" />
+    <Compile Include="Entities\userInfo.cs" />
+    <Compile Include="FormModuleSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModuleSelect.Designer.cs">
+      <DependentUpon>FormModuleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariable.cs" />
+    <Compile Include="ListenThread.cs" />
+    <Compile Include="Mapping\backupServerFileMap.cs" />
+    <Compile Include="Mapping\backupServerGroupDetailMap.cs" />
+    <Compile Include="Mapping\backupServerGroupMap.cs" />
+    <Compile Include="Mapping\backupServerMap.cs" />
+    <Compile Include="Mapping\fileTypeSetMap.cs" />
+    <Compile Include="Mapping\logMap.cs" />
+    <Compile Include="Mapping\manualBackupServerMap.cs" />
+    <Compile Include="Mapping\monitorBackupServerMap.cs" />
+    <Compile Include="Mapping\monitorFileListenMap.cs" />
+    <Compile Include="Mapping\monitorServerFileMap.cs" />
+    <Compile Include="Mapping\monitorServerFolderMap.cs" />
+    <Compile Include="Mapping\monitorServerMap.cs" />
+    <Compile Include="Mapping\userInfoMap.cs" />
+    <Compile Include="Models\BackupServerGroupDetailManager.cs" />
+    <Compile Include="Models\BackupServerGroupManager.cs" />
+    <Compile Include="Models\BackupServerManager.cs" />
+    <Compile Include="Models\FileSetInfo.cs" />
+    <Compile Include="Models\FileTypeSetManager.cs" />
+    <Compile Include="Models\MonitorFileListenManager.cs" />
+    <Compile Include="Models\MonitorServerFileManager.cs" />
+    <Compile Include="Models\MonitorServerFolderManager.cs" />
+    <Compile Include="Models\MonitorServerManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BudFileListen.resx">
+      <DependentUpon>BudFileListen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModuleSelect.resx">
+      <DependentUpon>FormModuleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Xml\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BudFileListen.ico" />
+    <Content Include="BudFileTransfer.ico" />
+    <Content Include="DirectoryClean.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLLFactory\BLLFactory.csproj">
+      <Project>{60672625-7920-4673-8B1F-2AD9E2037AB2}</Project>
+      <Name>BLLFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{3895FE8B-D53A-474D-AEDA-97D0F1CE5A1A}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{5BC13829-19A0-417D-805C-7D101375A3A8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALFactory\DALFactory.csproj">
+      <Project>{70AE6A70-CE23-4550-9FFE-E56DA98ACD97}</Project>
+      <Name>DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0DD11735-DE2B-440C-83F8-278F617D2B2D}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IBLL\IBLL.csproj">
+      <Project>{88A165A2-7DF2-486C-ADC5-F2117087CABE}</Project>
+      <Name>IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{E7DA2AFB-DF58-420C-9B89-4126CEEBBCF7}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{F086B2F7-C749-4B51-B1B0-6DE359604379}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MySQLDAL\MySQLDAL.csproj">
+      <Project>{609689B6-6E17-47F3-BE6B-BADFCB07B690}</Project>
+      <Name>MySQLDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
